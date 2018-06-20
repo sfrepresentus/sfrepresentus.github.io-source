@@ -1,0 +1,11 @@
+# WebStorm
+.idea
+
+# NodeJS
+node_modules
+
+# MacOS
+.DS_Store
+
+# vuepress
+src/.vuepress/dist

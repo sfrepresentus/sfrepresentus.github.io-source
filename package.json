@@ -1,0 +1,17 @@
+{
+  "name": "sfrepresentus.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "src:dev": "vuepress dev src",
+    "src:build": "vuepress build src"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "vuepress": "^0.10.1"
+  }
+}
