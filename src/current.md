@@ -4,7 +4,8 @@ sidebar: auto
 # Current
 _Current happenings in the chapter._
 ## News
-### _June 15, 2018_ - Reboot Meeting
+### Reboot Meeting
+_posted June 15_  
 
 **Events Details**  
 [See the Meetup here](https://www.meetup.com/Represent-Us-SF-Bay-Area/events/251718867/)

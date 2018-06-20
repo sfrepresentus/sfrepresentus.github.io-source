@@ -14,12 +14,13 @@ Build using vuepress on node. Hosted on github pages. Fork the repo, make change
 ```
 $ npm run src:dev     # to run development server
 $ npm run src:build   # to build files to .vuepress/dist
-$ ./deploy.sh     # to deploy files to github pages
+$ ./deploy.sh         # to deploy files to github pages
 ```
 
 #### Attributions
 - built with [vuepress](https://vuepress.vuejs.org/)
 - hosted on [github](https://github.com/) pages
+- developed on [webstorm](https://www.jetbrains.com/webstorm/)
 - logo based on work from flikr user [
 PMell2293
 ](https://www.flickr.com/photos/melling2293/6114735751)
