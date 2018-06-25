@@ -12,7 +12,7 @@ features:
   details: No time like realtime. Join our chat. 
   link: https://sfrepresentus-hq.slack.com
   logo: slack
-  img: assets/img/sf-represent-us-team.jpg
+  img: assets/img/sf-chapter.jpg
 - title: Meetup
   details: See our upcoming events. 
   link: https://www.meetup.com/Represent-Us-SF-Bay-Area/
