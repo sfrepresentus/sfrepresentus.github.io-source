@@ -12,6 +12,7 @@
     </div>
     <div class="features" v-if="data.features && data.features.length">
       <div class="feature" v-for="feature in data.features">
+        <img :src="feature.img" />
         <p>{{ feature.details }}</p>
         <p class="action" v-if="feature.link">
           <a class="action-button" :href="feature.link" target="parent">
@@ -101,6 +102,10 @@ export default {
       color lighten($textColor, 10%)
     p
       color lighten($textColor, 25%)
+    img
+      width 100%
+      max-height 190px
+      overflow hidden
     .action-button
       display inline-block
       font-size .8rem

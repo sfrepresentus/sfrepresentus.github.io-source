@@ -4,13 +4,13 @@
 set -e
 
 # build
-npm run src:build
+npm run build
 
 # navigate into the build output directory
 cd src/.vuepress/dist
 
 # if you are deploying to a custom domain
-# echo 'www.sfrepresentus.com' > CNAME
+echo 'www.sfrepresentus.com' > CNAME
 
 git init
 git add -A

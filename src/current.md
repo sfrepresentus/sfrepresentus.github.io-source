@@ -5,7 +5,6 @@ sidebar: auto
 _Current happenings in the chapter._
 ## News
 ### Reboot Meeting
-_posted June 15_  
 
 **Events Details**  
 [See the Meetup here](https://www.meetup.com/Represent-Us-SF-Bay-Area/events/251718867/)
@@ -17,6 +16,8 @@ The amazing Morgan, who led the group to two ballot wins, has taken a career opp
 So here we are. My background is more in software and innovation programs, so we're going to reboot aiming for a structure a bit more like an open source project. We can form some loosely coupled working groups. My areas of interest include:
 
   - continuing the great work the chapter started at the local level
+    - passing propositions using direct democracy
+    - working with experienced local groups like the [Ethics Commission](https://sfethics.org/) and [Friends of Ethics](https://www.facebook.com/FriendsofEthics)
   - understanding the political landscape and providing context
   - creating a voter base around making government responsive to all citizens
   - applying well researched tools and methodologies openly and transparently

@@ -4,6 +4,7 @@ module.exports = {
   port: 8080,
   title: 'Represent Us San Francisco',
   description: 'fixing congress by outlawing corruption',
+  ga: 'UA-77389901-1',
   head: [
     ['link', { rel: 'icon', href: '/favicon.png' }]
   ],
