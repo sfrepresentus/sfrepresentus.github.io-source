@@ -13,12 +13,38 @@
     <div class="features" v-if="data.features && data.features.length">
       <div class="feature" v-for="feature in data.features">
         <img :src="feature.img" />
-        <p>{{ feature.details }}</p>
-        <p class="action" v-if="feature.link">
-          <a class="action-button" :href="feature.link" target="parent">
-            {{feature.title}} →
+        <h3>{{ feature.title }}</h3>
+        <p class="action" v-if="feature.linktitle">
+          <a class="action-button" :href="feature.linkurl" target="parent">
+            {{feature.linktitle}} →
           </a>
         </p>
+        <p>{{ feature.details }}</p>
+      </div>
+    </div>
+    <h2>Current Work</h2>
+    <div class="currentworks" v-if="data.currentWorks && data.currentWorks.length">
+      <div class="currentwork" v-for="currentwork in data.currentWorks">
+        <img :src="currentwork.img" />
+        <div class="description">
+          <h3 class="title">{{ currentwork.title }}</h3>
+          <p class="body">
+            {{ currentwork.desc }}
+            <a class="action-button" :href="currentwork.linkurl" target="parent">
+              {{currentwork.linktitle}} →
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <h2>Past Wins</h2>
+    <div class="pastwins" v-if="data.pastWins && data.pastWins.length">
+      <div class="pastwin" v-for="pastwin in data.pastWins">
+        <img :src="pastwin.img" />
+        <div class="description">
+          <h3 class="title">{{ pastwin.title }}</h3>
+          <p class="body">{{ pastwin.desc }}</p>
+        </div>
       </div>
     </div>
     <Content custom/>
@@ -81,6 +107,72 @@ export default {
       border-bottom 1px solid darken($accentColor, 10%)
       &:hover
         background-color lighten($accentColor, 10%)
+  .currentworks
+    padding 1.2rem 0
+    margin-top 1.5rem
+    display flex
+    flex-wrap wrap
+    flex-direction column
+    align-items flex-start
+    align-content stretch
+    justify-content space-between
+  .currentwork
+    flex-grow 1
+    flex-basis 30%
+    max-height 30%
+    img
+      width 20%
+      max-height 190px
+      overflow hidden
+      display inline-flex
+    .description
+      width 75%
+      display inline-flex
+      float right
+      .title
+        width 30%
+      .body
+        width 70%
+        color lighten($textColor, 25%)
+      .action-button
+        display inline-block
+        font-size .8rem
+        color #fff
+        background-color $accentColor
+        padding 0.4rem 1rem
+        border-radius 4px
+        transition background-color .1s ease
+        box-sizing border-box
+        border-bottom 1px solid darken($accentColor, 10%)
+        &:hover
+          background-color lighten($accentColor, 10%)
+  .pastwins
+    padding 1.2rem 0
+    margin-top 1.5rem
+    display flex
+    flex-wrap wrap
+    flex-direction column
+    align-items flex-start
+    align-content stretch
+    justify-content space-between
+  .pastwin
+    flex-grow 1
+    flex-basis 30%
+    max-height 30%
+    img
+      width 20%
+      max-height 190px
+      overflow hidden
+      display inline-flex
+    .description
+      width 75%
+      display inline-flex
+      float right
+      .title
+        width 30%
+      .body
+        width 70%
+        color lighten($textColor, 25%)
   .features
     border-top 1px solid $borderColor
     padding 1.2rem 0
@@ -94,7 +186,7 @@ export default {
     flex-grow 1
     flex-basis 30%
     max-width 30%
-    h2
+    h3
       font-size 1.4rem
       font-weight 500
       border-bottom none

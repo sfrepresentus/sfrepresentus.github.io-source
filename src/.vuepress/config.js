@@ -19,9 +19,7 @@ module.exports = {
     search: false,
     activeHeaderLinks: false,
     nav: [
-        { text: 'Home', link: '/' },
-        { text: 'Current', link: '/current' },
-        { text: 'Past', link: '/past' },
+        { text: 'Home', link: '/' }
     ]
   },
 }
