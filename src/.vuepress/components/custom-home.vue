@@ -23,8 +23,8 @@
       </div>
     </div>
     <h2>Current Work</h2>
-    <div class="currentworks" v-if="data.currentWorks && data.currentWorks.length">
-      <div class="currentwork" v-for="currentwork in data.currentWorks">
+    <div id="currentworks" v-if="data.currentWorks && data.currentWorks.length">
+      <div id="currentwork" v-for="currentwork in data.currentWorks">
         <img :src="currentwork.img" />
         <div class="description">
           <h3 class="title">{{ currentwork.title }}</h3>
@@ -38,8 +38,8 @@
       </div>
     </div>
     <h2>Past Wins</h2>
-    <div class="pastwins" v-if="data.pastWins && data.pastWins.length">
-      <div class="pastwin" v-for="pastwin in data.pastWins">
+    <div id="pastwins" v-if="data.pastWins && data.pastWins.length">
+      <div id="pastwin" v-for="pastwin in data.pastWins">
         <img :src="pastwin.img" />
         <div class="description">
           <h3 class="title">{{ pastwin.title }}</h3>
@@ -107,7 +107,7 @@ export default {
       border-bottom 1px solid darken($accentColor, 10%)
       &:hover
         background-color lighten($accentColor, 10%)
-  .currentworks
+  #currentworks
     padding 1.2rem 0
     margin-top 1.5rem
     display flex
@@ -116,7 +116,7 @@ export default {
     align-items flex-start
     align-content stretch
     justify-content space-between
-  .currentwork
+  #currentwork
     flex-grow 1
     flex-basis 30%
     max-height 30%
@@ -146,7 +146,7 @@ export default {
         border-bottom 1px solid darken($accentColor, 10%)
         &:hover
           background-color lighten($accentColor, 10%)
-  .pastwins
+  #pastwins
     padding 1.2rem 0
     margin-top 1.5rem
     display flex
@@ -155,7 +155,7 @@ export default {
     align-items flex-start
     align-content stretch
     justify-content space-between
-  .pastwin
+  #pastwin
     flex-grow 1
     flex-basis 30%
     max-height 30%
